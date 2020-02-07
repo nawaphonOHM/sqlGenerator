@@ -106,18 +106,5 @@ public class Main {
 	}
 
 	public static void main(String... args){
-		Map<String, Object > parameters = new HashMap<String, Object >();
-		Map<String, String> selectTables = new HashMap<String, String>();
-		Map<String, String> fromTables = new HashMap<String, String>();
-
-		selectTables.put("invoice.INVOICE_ID", "transectionID");
-		selectTables.put("item.AMOUNT", "amount");
-		parameters.put("SELECT", selectTables);
-
-		
-		parameters.put("FROM", selectTables);
-
-
-		System.out.println(generateSQLTemplate(parameters));
 	}
 }
